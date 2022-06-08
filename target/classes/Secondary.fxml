@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.FXMLController">
+   <children>
+      <TableView fx:id="tableView" layoutX="82.0" layoutY="73.0" prefHeight="255.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="placeColumn" prefWidth="75.0" text="Placement" />
+          <TableColumn fx:id="highscoreColumn" prefWidth="99.0" text="Score" />
+            <TableColumn fx:id="nameColumn" prefWidth="261.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="256.0" layoutY="27.0" prefHeight="29.0" prefWidth="89.0" text="LEADERBOARD" textAlignment="CENTER" />
+      <Button layoutX="518.0" layoutY="344.0" mnemonicParsing="false" onAction="#toScoreButton" text="ToScore" />
+   </children>
+</AnchorPane>
